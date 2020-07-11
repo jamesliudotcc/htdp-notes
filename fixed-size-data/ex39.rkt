@@ -1,6 +1,6 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
-#reader(lib "htdp-beginner-reader.ss" "lang")((modname car_wish_list_plus_constants) (read-case-sensitive #t) (teachpacks ((lib "image.rkt" "teachpack" "2htdp"))) (htdp-settings #(#t constructor repeating-decimal #f #t none #f ((lib "image.rkt" "teachpack" "2htdp")) #f)))
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname ex29) (read-case-sensitive #t) (teachpacks ((lib "image.rkt" "teachpack" "2htdp"))) (htdp-settings #(#t constructor repeating-decimal #f #t none #f ((lib "image.rkt" "teachpack" "2htdp")) #f)))
 ; Physical Constants
 
 (define WIDTH-OF-WORLD 200)
@@ -12,7 +12,7 @@
 (define WHEEL
   (circle WHEEL-RADIUS "solid" "gray"))
 (define SPACE
-  (rectangle (* WHEEL-RADIUS 2) WHEEL-RADIUS "solid" "white"))
+  (rectangle (* WHEEL-RADIUS 2) WHEEL-RADIUS "solid" "transparent"))
 (define BOTH-WHEELS
   (beside WHEEL SPACE WHEEL))
 (define BODY (rectangle (* WHEEL-RADIUS 5 2) (* WHEEL-RADIUS 2) "solid" "red"))
